@@ -3,126 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Patrick Owusu Bofah - Portfolio</title>
+    <title>Patrick Bofah</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/skins/color-1.css">
 </head>
 <body>
-    <header class="bg-dark text-white text-center py-5">
-        <h1 class="animate__animated animate__fadeInDown">Patrick Owusu Bofah</h1>
-        <nav class="navbar navbar-expand-md navbar-dark">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item"><a class="nav-link animate__animated animate__bounceIn" href="#about">About</a></li>
-                    <li class="nav-item"><a class="nav-link animate__animated animate__bounceIn" href="#projects">Projects</a></li>
-                    <li class="nav-item"><a class="nav-link animate__animated animate__bounceIn" href="#skills">Skills</a></li>
-                    <li class="nav-item"><a class="nav-link animate__animated animate__bounceIn" href="#contact">Contact</a></li>
-                </ul>
-            </div>
-        </nav>
-    </header>
+    <div class="main-container">
+        <div class="aside">
+            aside
+        </div>
+        <div class="main-content">
+            <section class="home section">
+                Home
+            </section>
+        </div>
+    </div>
     
-    <section id="about" class="py-5">
-        <div class="container">
-            <h2 class="text-center mb-4 animate__animated animate__fadeInUp">About Me</h2>
-            <p class="text-center animate__animated animate__fadeInUp">I'm Patrick Owusu Bofah, a freshman at Grambling State University double majoring in Computer Science and Cybersecurity.</p>
-        </div>
-    </section>
-
-    <section id="projects" class="py-5 bg-light">
-        <div class="container">
-            <h2 class="text-center mb-4 animate__animated animate__fadeInUp">Projects</h2>
-            
-            <h3 class="text-center mb-4 animate__animated animate__fadeInUp">Data Science / Machine Learning Projects</h3>
-            <div class="row">
-                <!-- Project Card Template -->
-                <!-- Replace placeholder content with actual project details -->
-                <div class="col-md-3">
-                    <div class="card project-card">
-                        <div class="card-body">
-                            <h5 class="card-title">Weather App</h5>
-                            <p class="card-text">An interactive weather app with toggling between Fahrenheit, Celsius, and Kelvin.</p>
-                            <a href="https://github.com/PatrickOwusuBofah/weather-app" class="btn btn-primary" target="_blank">GitHub</a>
-                            <video src="images/project-previews/weather-app.mp4" class="project-preview" muted loop></video>
-                        </div>
-                    </div>
-                </div>
-                <!-- Repeat for other projects -->
-            </div>
-            
-            <h3 class="text-center mb-4 animate__animated animate__fadeInUp">Software Engineering Projects</h3>
-            <div class="row">
-                <!-- Project Card Template -->
-                <!-- Replace placeholder content with actual project details -->
-                <div class="col-md-3">
-                    <div class="card project-card">
-                        <div class="card-body">
-                            <h5 class="card-title">Project 1</h5>
-                            <p class="card-text">Description of Software Engineering Project 1.</p>
-                            <a href="#" class="btn btn-primary" target="_blank">GitHub</a>
-                            <video src="images/project-previews/project1.mp4" class="project-preview" muted loop></video>
-                        </div>
-                    </div>
-                </div>
-                <!-- Repeat for other projects -->
-            </div>
-        </div>
-    </section>
-
-    <section id="skills" class="py-5">
-        <div class="container">
-            <h2 class="text-center mb-4 animate__animated animate__fadeInUp">Skills</h2>
-            <div id="skillsCarousel" class="carousel slide" data-ride="carousel">
-                <div class="carousel-inner">
-                    <div class="carousel-item active">
-                        <img src="images/python.png" class="d-block w-100 animate__animated animate__bounceIn" alt="Python">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="images/javascript.png" class="d-block w-100 animate__animated animate__bounceIn" alt="JavaScript">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="images/java.png" class="d-block w-100 animate__animated animate__bounceIn" alt="Java">
-                    </div>
-                    <div class="carousel-item">
-                        <img src="images/html_css.png" class="d-block w-100 animate__animated animate__bounceIn" alt="HTML & CSS">
-                    </div>
-                </div>
-                <a class="carousel-control-prev" href="#skillsCarousel" role="button" data-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Previous</span>
-                </a>
-                <a class="carousel-control-next" href="#skillsCarousel" role="button" data-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="sr-only">Next</span>
-                </a>
-            </div>
-        </div>
-    </section>
-
-    <section id="contact" class="py-5 bg-light">
-        <div class="container">
-            <h2 class="text-center mb-4 animate__animated animate__fadeInUp">Contact</h2>
-            <form>
-                <div class="form-group animate__animated animate__fadeInUp">
-                    <label for="name">Name:</label>
-                    <input type="text" id="name" name="name" class="form-control" required>
-                </div>
-                <div class="form-group animate__animated animate__fadeInUp">
-                    <label for="email">Email:</label>
-                    <input type="email" id="email" name="email" class="form-control" required>
-                </div>
-                <div class="form-group animate__animated animate__fadeInUp">
-                    <label for="message">Message:</label>
-                    <textarea id="message" name="message" class="form-control" required></textarea>
-                </div>
-                <button type="submit" class="btn btn-primary animate__animated animate__fadeInUp">Send</button>
-            </form>
-        </div>
-    </section>
 
     <footer class="bg-dark text-white text-center py-3">
         <p>&copy; 2024 Patrick Owusu Bofah</p>
@@ -131,6 +29,6 @@
     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.6.0/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="scripts.js"></script>
+    <script src="js/scripts.js"></script>
 </body>
 </html>
