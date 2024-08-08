@@ -16,10 +16,20 @@
     <link rel="stylesheet" href="css/skins/color-5.css" class="alternate-style" title="color-5" disabled>
 </head>
 <body>
+    <div class="loader-wrapper">
+        <div class="loader">
+            <div class="math-symbols">
+                <span class="symbol1">∫</span> 
+                <span class="symbol2">π</span> 
+                <span class="symbol3">∞</span> 
+            </div>
+            <p>Loading...</p>
+        </div>
+    </div>
     <div class="main-container">
         <div class="aside">
             <div class="logo">
-                <a href="#">
+                <a href="#home">
                     <span>B</span>ofah
                 </a>
             </div>
@@ -27,13 +37,13 @@
                 <span></span>
             </div>
             <ul class="nav">
-                <li><a href="#home" class="active"> <i class="fa fa-home"></i> Home </a></li>
-                <li><a href="#about"> <i class="fa fa-user"></i> About </a></li>
-                <li><a href="#services"> <i class="fa fa-list"></i> Services </a></li>
-                <li><a href="#portfolio"> <i class="fa fa-briefcase"></i> Portfolio </a></li>
-                <li><a href="#contact"> <i class="fa fa-comments"></i> Contact </a></li>
+                <li><a href="#home" class="active nav-link"> <i class="fa fa-home"></i> Home </a></li>
+                <li><a href="#about" class="nav-link"> <i class="fa fa-user"></i> About </a></li>
+                <li><a href="#services" class="nav-link"> <i class="fa fa-list"></i> Services </a></li>
+                <li><a href="#portfolio" class="nav-link"> <i class="fa fa-briefcase"></i> Portfolio </a></li>
+                <li><a href="#contact" class="nav-link"> <i class="fa fa-comments"></i> Contact </a></li>
             </ul>
-        </div>
+        </div>   
         <div class="main-content">
             <!--Home-->
             <section class="home section" id="home">
@@ -527,39 +537,50 @@
                         </div>
                         <h3 class="contact-title padd-15"> SEND ME AN EMAIL </h3>
                         <h4 class="contact-sub-title padd-15"> I'M VERY RESPONSIVE TO MESSAGES </h4>
-                        <form class="contact-form">
+                        <form id="contact-form" class="contact-form">
                             <div class="row">
                                 <div class="form-item col-6 padd-15">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Name" required>
+                                        <input type="text" name="name" class="form-control" placeholder="Name" required>
                                     </div>
                                 </div>
                                 <div class="form-item col-6 padd-15">
                                     <div class="form-group">
-                                        <input type="email" class="form-control" placeholder="Email" required>
+                                        <input type="email" name="email" class="form-control" placeholder="Email" required>
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="form-item col-12 padd-15">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Subject" required>
+                                        <input type="text" name="subject" class="form-control" placeholder="Subject" required>
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="form-item col-12 padd-15">
                                     <div class="form-group">
-                                        <textarea name="" class="form-control" id="" placeholder="Message" required></textarea>
+                                        <textarea name="message" class="form-control" placeholder="Message" required></textarea>
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="form-item col-12 padd-15">
-                                    <button type="submit" class="btn"> Send Message </button>
+                                    <button type="submit" class="btn">Send Message</button>
                                 </div>
                             </div>
-                        </div>
+                        </form>                        
+                        <div class="social-links">
+                            <a href="https://www.linkedin.com/in/patrick-owusu-bofah-7b2a761ab" target="_blank" class="social-icon linkedin">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://github.com/Patrick4350" target="_blank" class="social-icon github">
+                                <i class="fab fa-github"></i>
+                            </a>
+                            <a href="https://www.instagram.com/patrick_bofah/" target="_blank" class="social-icon instagram">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                        </div>                                               
                     </div>
                 </section>
             </div>
@@ -581,9 +602,15 @@
                 <span class="color-5" onclick="setActiveStyle('color-5')"></span>
             </div>
         </div>
-    
+        <footer class="footer">
+            <div class="footer-content">
+                <p class="footer-text">Made with <span class="heart">❤️</span> by Patrick Bofah</p>
+                <p class="footer-text">© 2024 All rights reserved.</p>
+            </div>
+        </footer>
+                
         
-    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"> </script>
     <script src="js/contact.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js" integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="js/scripts.js"></script>

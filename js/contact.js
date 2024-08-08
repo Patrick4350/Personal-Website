@@ -1,5 +1,7 @@
 /* Email Submission */
-emailjs.init("service_31ns1oj");
+emailjs.init({
+    publicKey: "U691jdN9DhdnFb1wp"
+});
 
 function sendEmail(event) {
     event.preventDefault(); 
@@ -12,15 +14,14 @@ function sendEmail(event) {
         data[key] = value;
     });
 
-    emailjs.send("your_service_id", "your_template_id", data)
-        .then(response => {
-            alert('Message sent successfully!');
-            form.reset(); 
-        })
-        .catch(error => {
-            alert('Failed to send message. Please try again.');
-            console.error('Error:', error);
-        });
+    emailjs.send("service_31ns1oj", "template_lfi0q6e", data)
+    .then(response => {
+        alert('Thank you for your message! It has been sent successfully, and I will get back to you shortly.');
+        form.reset();
+    })
+    .catch(error => {
+        alert('Oops! Something went wrong. Please try again.');
+    });
 }
 
 document.getElementById('contact-form').addEventListener('submit', sendEmail);

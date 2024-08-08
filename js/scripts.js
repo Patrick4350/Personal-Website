@@ -32,4 +32,34 @@ document.addEventListener("DOMContentLoaded", function () {
     });
 });
 
+/* Active */
+document.addEventListener('DOMContentLoaded', function() {
+    const sections = document.querySelectorAll('section');
+    const navLinks = document.querySelectorAll('.nav-link');
 
+    function changeActiveLink() {
+        let index = sections.length;
+
+        while(--index && window.scrollY + 50 < sections[index].offsetTop) {}
+
+        navLinks.forEach((link) => link.classList.remove('active'));
+        navLinks[index].classList.add('active');
+    }
+
+    changeActiveLink();
+    window.addEventListener('scroll', changeActiveLink);
+});
+
+/* Loader */
+document.addEventListener('DOMContentLoaded', function() {
+    const loaderWrapper = document.querySelector('.loader-wrapper');
+
+    window.addEventListener('load', function() {
+        setTimeout(() => {
+            loaderWrapper.style.opacity = '0';
+            setTimeout(() => {
+                loaderWrapper.style.display = 'none';
+            }, 500); // Allow time for fade-out effect
+        }, 2000); // Delay in milliseconds (2000ms = 2 seconds)
+    });
+});
