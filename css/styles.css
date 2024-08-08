@@ -1044,7 +1044,6 @@ footer.dark {
     margin: 0 auto;
     padding: 0 20px;
     padding-left: 20%;
-    box-sizing: border-box; /* Ensure padding does not affect width */
 }
 
 .footer-text {
