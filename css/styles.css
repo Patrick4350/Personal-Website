@@ -79,7 +79,7 @@
 }
 
 
-body.dark, footer.dark
+body.dark
 {
     --bg-black-900:#151515;
     --bg-black-100:#222222;
@@ -1033,11 +1033,10 @@ footer {
     text-align: center;
 }
 
-footer.dark {
+body.dark footer {
     background-color: var(--bg-black-900);
     color: var(--text-black-900);
 }
-
 
 .footer-content {
     max-width: 1200px;
@@ -1052,5 +1051,5 @@ footer.dark {
 }
 
 .heart {
-    color: #e74c3c; /* Red color for the heart */
+    color: #e74c3c; 
 }
