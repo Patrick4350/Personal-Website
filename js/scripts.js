@@ -1,3 +1,12 @@
+/* Typing Animation */
+var typed = new Typed(".typing", {
+    strings:["", "FullStack Developer", "Software Engineer", "Data Scientist", "UX/UI Designer", "Math Enthusiast"],
+    typeSpeed:100, 
+    BackSpeed:60,
+    loop:true
+})
+
+
 document.addEventListener("DOMContentLoaded", function () {
     // Add smooth scrolling to all links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -22,3 +31,5 @@ document.addEventListener("DOMContentLoaded", function () {
         observer.observe(element);
     });
 });
+
+

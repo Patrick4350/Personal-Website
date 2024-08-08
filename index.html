@@ -8,6 +8,12 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
     <link rel="stylesheet" href="css/styles.css">
     <link rel="stylesheet" href="css/skins/color-1.css">
+    <link rel="stylesheet" href="css/style-switcher.css">
+    <link rel="stylesheet" href="css/skins/color-1.css" class="alternate-style" title="color-1" disabled>
+    <link rel="stylesheet" href="css/skins/color-2.css" class="alternate-style" title="color-2" disabled>
+    <link rel="stylesheet" href="css/skins/color-3.css" class="alternate-style" title="color-3" disabled>
+    <link rel="stylesheet" href="css/skins/color-4.css" class="alternate-style" title="color-4" disabled>
+    <link rel="stylesheet" href="css/skins/color-5.css" class="alternate-style" title="color-5" disabled>
 </head>
 <body>
     <div class="main-container">
@@ -21,16 +27,16 @@
                 <span></span>
             </div>
             <ul class="nav">
-                <li><a href="#" class="active"> <i class="fa fa-home"></i> Home </a></li>
-                <li><a href="#"> <i class="fa fa-user"></i> About </a></li>
-                <li><a href="#"> <i class="fa fa-list"></i> Services </a></li>
-                <li><a href="#"> <i class="fa fa-briefcase"></i> Portfolio </a></li>
-                <li><a href="#"> <i class="fa fa-comments"></i> Contact </a></li>
+                <li><a href="#home" class="active"> <i class="fa fa-home"></i> Home </a></li>
+                <li><a href="#about"> <i class="fa fa-user"></i> About </a></li>
+                <li><a href="#services"> <i class="fa fa-list"></i> Services </a></li>
+                <li><a href="#portfolio"> <i class="fa fa-briefcase"></i> Portfolio </a></li>
+                <li><a href="#contact"> <i class="fa fa-comments"></i> Contact </a></li>
             </ul>
         </div>
         <div class="main-content">
             <!--Home-->
-            <section class="home section">
+            <section class="home section" id="home">
                 <div class="container">
                     <div class="row">
                         <div class="home-info padd-15">
@@ -46,7 +52,7 @@
                 </div>
             </section>
             <!--About-->
-            <section class="about section">
+            <section class="about section" id="about">
                 <div class="container">
                     <div class="row">
                         <div class="section-title padd-15">
@@ -65,10 +71,10 @@
                                 <div class="personal-info padd-15">
                                     <div class="row">
                                         <div class="info-item padd-15">
-                                            <p> Website: <span> <a href="https://patrick4350.github.io/Personal-Website/"> Personal Website </a>  </span> </p>
+                                            <p> Website: <span> <a href="https://patrick4350.github.io/Personal-Website/" class="link-element"> Personal Website </a>  </span> </p>
                                         </div>
                                         <div class="info-item padd-15">
-                                            <p> Email : <span class="link-element"> pbofah1@gmail.com </span> </p>
+                                            <p> Email : <a href="mailto:pbofah1@gmail.com" class="link-element"> <span> pbofah1@gmail.com </span> </a> </p>
                                         </div>
                                         <div class="info-item padd-15">
                                             <p> Degree : <span> Computer Science </span> </p>
@@ -343,7 +349,7 @@
                     </div>
                 </section>
                 <!--Services-->
-                <section class="service section">
+                <section class="service section" id="services">
                     <div class="container">
                         <div class="row">
                             <div class="section-title padd-15">
@@ -422,7 +428,7 @@
                     </div>
                 </section>
                 <!--Portfolio Section-->
-                <section class="portfolio section"> 
+                <section class="portfolio section" id="portfolio"> 
                     <div class="container">
                         <div class="row">
                             <div class="section-title padd-15">
@@ -493,7 +499,7 @@
                     </div>
                 </section>
                 <!--Contact Section-->
-                <section class="contact section">
+                <section class="contact section" id="contact">
                     <div class="container">
                         <div class="row">
                             <div class="section-title padd-15">
@@ -521,30 +527,30 @@
                         </div>
                         <h3 class="contact-title padd-15"> SEND ME AN EMAIL </h3>
                         <h4 class="contact-sub-title padd-15"> I'M VERY RESPONSIVE TO MESSAGES </h4>
-                        <div class="contact-form">
+                        <form class="contact-form">
                             <div class="row">
                                 <div class="form-item col-6 padd-15">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Name">
+                                        <input type="text" class="form-control" placeholder="Name" required>
                                     </div>
                                 </div>
                                 <div class="form-item col-6 padd-15">
                                     <div class="form-group">
-                                        <input type="email" class="form-control" placeholder="Email">
+                                        <input type="email" class="form-control" placeholder="Email" required>
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="form-item col-12 padd-15">
                                     <div class="form-group">
-                                        <input type="text" class="form-control" placeholder="Subject">
+                                        <input type="text" class="form-control" placeholder="Subject" required>
                                     </div>
                                 </div>
                             </div>
                             <div class="row">
                                 <div class="form-item col-12 padd-15">
                                     <div class="form-group">
-                                        <textarea name="" class="form-control" id="" placeholder="Message"></textarea>
+                                        <textarea name="" class="form-control" id="" placeholder="Message" required></textarea>
                                     </div>
                                 </div>
                             </div>
@@ -558,9 +564,30 @@
                 </section>
             </div>
         </div>
+        <!--Style Switcher-->
+        <div class="style-switcher">
+            <div class="style-switcher-toggler s-icon">
+                <i class="fas fa-cog fa-spin"></i>
+            </div>
+            <div class="day-night s-icon">
+                <i class="fas "></i>
+            </div>
+            <h4> Theme Colors </h4>
+            <div class="colors">
+                <span class="color-1" onclick="setActiveStyle('color-1')"></span>
+                <span class="color-2" onclick="setActiveStyle('color-2')"></span>
+                <span class="color-3" onclick="setActiveStyle('color-3')"></span>
+                <span class="color-4" onclick="setActiveStyle('color-4')"></span>
+                <span class="color-5" onclick="setActiveStyle('color-5')"></span>
+            </div>
+        </div>
     
-
-    
+        
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script src="js/contact.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typed.js/2.1.0/typed.umd.js" integrity="sha512-+2pW8xXU/rNr7VS+H62aqapfRpqFwnSQh9ap6THjsm41AxgA0MhFRtfrABS+Lx2KHJn82UOrnBKhjZOXpom2LQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
     <script src="js/scripts.js"></script>
+    <script src="js/style-switcher.js"></script>
+
 </body>
 </html>
