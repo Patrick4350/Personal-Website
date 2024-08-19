@@ -63,5 +63,5 @@ This project is licensed under the MIT License. See the [LICENSE](LICENSE) file 
 For any inquiries, you can reach me via:
 
 - **Email**: [pbofah1@gmail.com](mailto:pbofah1@gmail.com)
-- **LinkedIn**: linkedin.com/in/patrick-owusu-bofah-7b2a761ab
+- **LinkedIn**: [Patrick Owusu Bofah](https://linkedin.com/in/patrick-owusu-bofah-7b2a761ab)
 - **GitHub**: [Patrick4350](https://github.com/Patrick4350)
