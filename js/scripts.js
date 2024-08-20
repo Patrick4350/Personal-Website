@@ -59,7 +59,24 @@ document.addEventListener('DOMContentLoaded', function() {
             loaderWrapper.style.opacity = '0';
             setTimeout(() => {
                 loaderWrapper.style.display = 'none';
-            }, 500); // Allow time for fade-out effect
-        }, 2000); // Delay in milliseconds (2000ms = 2 seconds)
+            }, 500); 
+        }, 2000); 
     });
 });
+
+/* Videos */
+document.addEventListener('DOMContentLoaded', function() {
+    var videos = document.getElementsByClassName('myVideo');
+    
+    for (var i = 0; i < videos.length; i++) {
+        var video = videos[i];
+        
+        video.autoplay = true;
+        video.loop = true;
+
+        video.play().catch(function(error) {
+            console.error('Error trying to play the video:', error);
+        });
+    }
+});
+
